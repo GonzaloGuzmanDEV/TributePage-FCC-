@@ -1,0 +1,288 @@
+/* Estilos Generales */
+
+body{
+
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style:disc;
+    font-family: 'Rubik', sans-serif;
+    padding: 5px
+}
+
+/* Fuentes */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+            /* 'Bebas Neue', cursive */
+
+/* PrincipalContain */
+
+.PrincipalContain{
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+/* header */
+
+#PrincipalHeader{
+
+    width: 100%;
+}
+
+.BarPrincipalHeader{
+
+    width: 100%;
+    height: 60px;
+    background-color: rgb(20, 20, 20);
+}
+
+.BarPrincipalBox{
+
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.BarPrincipalImage{
+
+    width: 50px;
+    height: 50px;
+    display: flex;
+    padding: 10px;
+
+}
+
+.BarPrincipalImage img{
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.MartinLink{
+
+    color: #ffffff;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+/* main */
+
+#main{
+
+    width: 100%;
+    height: 500px;
+}
+
+/* ImageSection */
+
+.ImageSection{
+
+    width: 100%;
+    height: 500px;
+    background-image: radial-gradient(circle at 9.95% 9.95%, #4a6b6e 0, #4a6364 12.5%, #4b5b5a 25%, #4a5251 37.5%, #484848 50%, #453e41 62.5%, #42363c 75%, #3d2e38 87.5%, #382836 100%);
+    display: flex;
+}
+
+.ImageSectionText{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImageSectionPic{
+
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+
+    font-family:  'Bebas Neue', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.ImageSectionTextP{
+
+    width: 50%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.PictureMartin{
+
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PictureMartin img{
+
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.PictureMartin img:hover{
+
+    box-shadow: 0 0 30px rgb(255, 255, 255);
+    transition-duration: 0.2s;
+
+}
+
+.MartinName{
+
+    color: #ffffff;
+    margin: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+}
+
+/* BannerSection */
+
+.BannerSection{
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+}
+
+.BannerSectionFigure{
+
+ 
+    width: 60%;
+    height: auto;
+    box-shadow: 0 0 20px rgb(58, 58, 58);
+    padding: 10px;
+    
+}
+
+.BannerSectionFigure:hover{
+
+    box-shadow: 0 0 30px rgb(58, 58, 58);
+    transition-duration: 0.5s;
+}
+
+.BannerSectionFigure img{
+
+  
+    width: 100%;
+    max-height: 100%;
+}
+
+/* SectionList */
+
+.SectionList{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2{
+    font-family: 'Bebas Neue', arial;
+    margin-bottom: 0;
+}
+
+.MartinParagraph{
+
+    width: 80%;
+    font-family:'Rubik', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.PtributeLink{
+
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    width: 80%;
+    text-align: center;
+}
+
+@media all and (min-width:300px){
+
+
+    .BarPrincipalHeader{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1{
+        margin:0;
+    }
+
+    .ImageSection{
+
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .ImageSectionText{
+
+        width: 80%;
+    }
+
+    .ImageSectionTextP{
+
+        width: 80%;
+    }
+
+    .ImageSectionPic{
+
+        padding: 20px;
+    }
+}
+
+@media all and (min-width:800px){
+
+    .BarPrincipalHeader{
+
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+
+    .ImageSection{
+
+        flex-direction: row;
+        height: 600px;
+    }
+}
